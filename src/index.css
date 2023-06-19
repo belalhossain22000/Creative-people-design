@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+/* custom class */
+@layer utilities {
+    .clip-custom-bg {
+      clip-path: polygon(0% 30.5%, 99.5% 0%, 98.59% 100%, 0% 100%);
+      background-color: #c3caff;
+    }
+  }
