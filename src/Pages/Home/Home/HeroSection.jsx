@@ -18,7 +18,7 @@ const HeroSection = () => {
 
     return (
         <div className='md:flex bg-[#F4F9FF]'>
-            <div className='md:w-1/2  md:ml-[298px] '
+            <div className='md:w-1/2 heroLs  md:ml-[298px] '
                 data-aos="fade-up"
                 data-aos-delay="50"
                 data-aos-duration="1000"
@@ -58,7 +58,7 @@ const HeroSection = () => {
                 data-aos="fade-down"
                 data-aos-delay="50"
                 data-aos-duration="1000"
-                className="mt-[41px] z-10  relative  w-[743px] h-661px[]  mr-[235px] bg-[url(https://i.ibb.co/0Kpnvj1/Group-1000006983.png)] bg-no-repeat ">
+                className="mt-[41px] z-10 heroLs  relative  w-[743px] h-661px[]  mr-[235px] bg-[url(https://i.ibb.co/0Kpnvj1/Group-1000006983.png)] bg-no-repeat ">
                 <img className='absolute  bottom-[139px] left-[-40px]' src={MainPerson} alt="" />
                 <div className='bg-white w-[274px] flex items-center p-[20px] gap-[20px] rounded-md h-[130px] absolute top-[40px] left-[353px]  '>
                     <img className='h-[71px] w-[71px] ' src={sign} alt="" />
