@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import person1 from '../../../assets/Ellipse 1025.png';
 import person2 from '../../../assets/Ellipse 1026.png';
 import person3 from '../../../assets/Ellipse 1027.png';
@@ -8,11 +8,21 @@ import sign from '../../../assets/Group 1000006985.png';
 import star from '../../../assets/Frame.png';
 import arrowIcon from '../../../assets/Icon.png';
 import chart from '../../../assets/Group 1000007000.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HeroSection = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
-        <div className='flex bg-[#F4F9FF]'>
-            <div className='w-1/2 ml-[298px] '>
+        <div className='md:flex bg-[#F4F9FF]'>
+            <div className='md:w-1/2  md:ml-[298px] '
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+            >
                 <div className=''>
                     <h2 className='text-[90px] m-[0px]  font-bold leading-[86px] tracking[-0.02] pt-[82px] '><span className='text-[#FBB344]'>Hire consultant </span> for boost your  business</h2>
                     <p className='mt-[20px] text-[20px] leading-[40px] '><small>Consultancy firm established by professionals with the intention <br /> to identify and unlock potential avenues for innovative ideas</small></p>
@@ -44,7 +54,11 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-[41px] z-10  relative  w-[743px] h-661px[]  mr-[235px] bg-[url(https://i.ibb.co/0Kpnvj1/Group-1000006983.png)] bg-no-repeat ">
+            <div
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="mt-[41px] z-10  relative  w-[743px] h-661px[]  mr-[235px] bg-[url(https://i.ibb.co/0Kpnvj1/Group-1000006983.png)] bg-no-repeat ">
                 <img className='absolute  bottom-[139px] left-[-40px]' src={MainPerson} alt="" />
                 <div className='bg-white w-[274px] flex items-center p-[20px] gap-[20px] rounded-md h-[130px] absolute top-[40px] left-[353px]  '>
                     <img className='h-[71px] w-[71px] ' src={sign} alt="" />
@@ -58,7 +72,7 @@ const HeroSection = () => {
                     <p><small className='font-medium text-[12px]'>Last 7 days Business Growth</small></p>
 
                     {/* TODO MAKE CHART DYNAMIC */}
-                    
+
                     <img src={chart} alt="" />
                     <div className='bg-[#F3F8FE] h-[12px] w-[187px]'>
                         <p className='text-[#404040] text-[10px] font-semibold '>75.24% increase frome last week</p>

@@ -8,7 +8,7 @@ import arrowIcon from '../../../assets/Icon.png';
 
 const Navbar = () => {
   return (
-    <nav className="bg-white text-[#404040]  flex items-center justify-between py-4 pl-[300px] pr-[320px] w-[1920px]">
+    <nav className="bg-white text-[#404040]  flex items-center justify-between py-4 w-full md:pl-[300px] md:pr-[320px] md:w-[1920px]">
       <div className="flex items-center gap-[12px]  ">
         <img  src={logo} alt="Logo" className="w-[76px] h-[48]" />
         <img src={logo2} alt="Logo" className="w-[120px] h-[38]" />

@@ -6,6 +6,7 @@ import Features from './Features';
 import Servicess from './Servicess';
 import OurTeam from './OurTeam';
 import Client from './Client';
+import Update from './Update';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
            <Servicess></Servicess>
            <OurTeam></OurTeam>
            <Client/>
+           <Update/>
         </div>
     );
 };

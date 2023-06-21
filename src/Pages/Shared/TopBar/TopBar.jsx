@@ -9,7 +9,7 @@ import message from '../../../assets/Message.png';
 
 const TopBar = () => {
     return (
-        <div className='bg-[#0F0F0F] w-[1920px] h-[60px] flex justify-between  px-[300px]'>
+        <div className='bg-[#0F0F0F]  w-full  md:w-[1920px] h-[60px] flex justify-between  md:px-[300px]'>
             <div className='flex items-center gap-5 p-5'>
                 <img className=' text-white h-5 w-5' src={twitter} alt="" />
                 <img className=' text-white h-5 w-5' src={linkedIn} alt="" />
